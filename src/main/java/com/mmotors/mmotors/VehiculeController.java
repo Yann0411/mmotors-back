@@ -1,9 +1,6 @@
 package com.mmotors.mmotors;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.util.List;
@@ -19,7 +16,29 @@ public class VehiculeController {
     }
 
     @GetMapping
-    public List<Vehicule> getAllVehicules() {
+    public List<Vehicule> getAllVehicules(
+            @RequestParam(required = false) String typeOffre,
+            @RequestParam(required = false) String marque,
+            @RequestParam(required = false) String modele,
+            @RequestParam(required = false) Double prixMin,
+            @RequestParam(required = false) Double prixMax,
+            @RequestParam(required = false) Integer kilometrageMax) {
+
+        if (marque != null || modele != null || prixMin != null || prixMax != null || kilometrageMax != null) {
+            return vehiculeRepository
+                    .findByTypeOffreAndMarqueContainingIgnoreCaseAndModeleContainingIgnoreCaseAndPrixBetweenAndKilometrageIsLessThanEqual(
+                            typeOffre != null ? typeOffre : "",
+                            marque != null ? marque : "",
+                            modele != null ? modele : "",
+                            prixMin != null ? prixMin : 0,
+                            prixMax != null ? prixMax : Double.MAX_VALUE,
+                            kilometrageMax != null ? kilometrageMax : Integer.MAX_VALUE
+                    );
+        }
+        if (typeOffre != null) {
+            return vehiculeRepository.findByTypeOffre(typeOffre);
+        }
         return vehiculeRepository.findAll();
     }
+
 }
