@@ -7,20 +7,21 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Vehicule {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String marque;
+     private String marque;
     private String modele;
     private int annee;
     private double prix;
     private int kilometrage;
+
     private String typeOffre;
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
-
     public String getMarque() { return marque; }
     public void setMarque(String marque) { this.marque = marque; }
 

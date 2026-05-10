@@ -1,6 +1,7 @@
 package com.mmotors.mmotors;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+  import org.springframework.data.jpa.repository.JpaRepository;
+
 import java.util.List;
 
 public interface VehiculeRepository extends JpaRepository<Vehicule, Long> {
@@ -12,6 +13,8 @@ public interface VehiculeRepository extends JpaRepository<Vehicule, Long> {
             double prixMin,
             double prixMax,
             int kilometrageMax
+
+
     );
 
 

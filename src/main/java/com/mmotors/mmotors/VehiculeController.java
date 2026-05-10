@@ -8,25 +8,30 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/vehicules")
-public class VehiculeController {
+
+   public class VehiculeController {
 
     private VehiculeRepository vehiculeRepository;
-    public VehiculeController(VehiculeRepository vehiculeRepository) {
-        this.vehiculeRepository = vehiculeRepository;
+     public VehiculeController(VehiculeRepository vehiculeRepository) {
+          this.vehiculeRepository = vehiculeRepository;
     }
 
     @GetMapping
-    public List<Vehicule> getAllVehicules(
+     public List<Vehicule> getAllVehicules(
             @RequestParam(required = false) String typeOffre,
+
             @RequestParam(required = false) String marque,
             @RequestParam(required = false) String modele,
             @RequestParam(required = false) Double prixMin,
             @RequestParam(required = false) Double prixMax,
             @RequestParam(required = false) Integer kilometrageMax) {
 
-        if (marque != null || modele != null || prixMin != null || prixMax != null || kilometrageMax != null) {
-            return vehiculeRepository
+         if  (marque != null || modele != null || prixMin != null || prixMax != null || kilometrageMax != null) {
+
+             return vehiculeRepository
+
                     .findByTypeOffreAndMarqueContainingIgnoreCaseAndModeleContainingIgnoreCaseAndPrixBetweenAndKilometrageIsLessThanEqual(
+
                             typeOffre != null ? typeOffre : "",
                             marque != null ? marque : "",
                             modele != null ? modele : "",
@@ -36,6 +41,7 @@ public class VehiculeController {
                     );
         }
         if (typeOffre != null) {
+
             return vehiculeRepository.findByTypeOffre(typeOffre);
         }
         return vehiculeRepository.findAll();
