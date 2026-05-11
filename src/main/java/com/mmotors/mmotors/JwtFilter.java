@@ -13,6 +13,10 @@ import org.springframework.stereotype.Component;
 
 import org.springframework.web.filter.OncePerRequestFilter;
 
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+
+
 import java.io.IOException;
 import java.util.List;
 
@@ -20,9 +24,11 @@ import java.util.List;
 public class JwtFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
+    private final ClientRepository clientRepository;
 
-    public JwtFilter(JwtService jwtService) {
+    public JwtFilter(JwtService jwtService, ClientRepository clientRepository) {
         this.jwtService = jwtService;
+        this.clientRepository = clientRepository;
     }
 
     @Override
@@ -37,11 +43,17 @@ public class JwtFilter extends OncePerRequestFilter {
             String token = header.substring(7);
             if (jwtService.tokenValide(token)) {
                 String email = jwtService.extraireEmail(token);
-                UsernamePasswordAuthenticationToken auth =
-                        new UsernamePasswordAuthenticationToken(email, null, List.of());
-                SecurityContextHolder.getContext().setAuthentication(auth);
+                Client client = clientRepository.findByEmail(email).orElse(null);
+                if (client != null) {
+                    UsernamePasswordAuthenticationToken auth =
+                            new UsernamePasswordAuthenticationToken(email, null,
+                                    List.of(new SimpleGrantedAuthority(client.getRole())));
+                    SecurityContextHolder.getContext().setAuthentication(auth);
+                }
             }
         }
+
+
 
         filterChain.doFilter(request, response);
     }
