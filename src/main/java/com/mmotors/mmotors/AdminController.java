@@ -61,14 +61,17 @@ public class AdminController {
     }
 
     // Valider ou refuser un dossier
+
     @PutMapping("/dossiers/{id}")
-    public ResponseEntity<?> mettreAJourDossier(@PathVariable Long id, @RequestBody Dossier
-            dossier) {
-         return dossierRepository.findById(id).map(d -> {
-            d.setStatut(dossier.getStatut());
-            dossierRepository.save(d);
-            return ResponseEntity.ok("Dossier mis à jour");
-        }).orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<?> mettreAJourDossier(@PathVariable Long id, @RequestBody Dossier dossier) {
+        if (dossierRepository.findById(id).isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        Dossier d = dossierRepository.findById(id).get();
+        d.setStatut(dossier.getStatut());
+        dossierRepository.save(d);
+        return ResponseEntity.ok("Dossier mis à jour");
     }
+
 }
 

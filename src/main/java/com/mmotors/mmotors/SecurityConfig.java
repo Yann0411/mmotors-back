@@ -31,7 +31,7 @@ public class SecurityConfig {
                   .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/vehicules/**", "/auth/**").permitAll()
+                        .requestMatchers("/vehicules/**", "/auth/**", "/actuator/**").permitAll()
                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
                         .anyRequest().authenticated()
                 )
