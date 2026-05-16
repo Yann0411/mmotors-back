@@ -12,12 +12,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<?> gererErreurValidation(MethodArgumentNotValidException ex) {
         return ResponseEntity.badRequest().body("Erreur de validation des champs");
-
-
     }
 
     @ExceptionHandler(Exception.class)
-         public ResponseEntity<?> gererErreurGenerale(Exception ex) {
+    public ResponseEntity<?> gererErreurGenerale(Exception ex) {
         return ResponseEntity.internalServerError().body("Une erreur est survenue");
     }
 }

@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
  import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Pattern;
+
 
 @Entity
 public class Client {
@@ -24,7 +26,8 @@ public class Client {
     private String email;
 
     @NotBlank
-    @Size(min = 8)
+    @Pattern(regexp = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$", message = "Le mot de passe doit avoir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial")
+
     private String motDePasse;
 
     private String role;

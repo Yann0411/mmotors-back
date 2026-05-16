@@ -3,14 +3,20 @@ package com.mmotors.mmotors;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+
+
 @Service
 public class JwtService {
 
-          private static final String SECRET_KEY = "mmotors-bachelor-developpeur-application-yann-2026-bloc3";
+
+    @Value("${jwt.secret}")
+    private String SECRET_KEY;
+
 
     public String genererToken(String email) {
 

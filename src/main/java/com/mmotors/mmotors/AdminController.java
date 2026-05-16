@@ -24,6 +24,15 @@ public class AdminController {
     // Ajouter un vehicule
     @PostMapping("/vehicules")
     public ResponseEntity<?> ajouterVehicule(@RequestBody Vehicule vehicule) {
+
+        System.out.println("===================JE SUIS DANS AMIN_CONTROLEUR====================================");
+        System.out.println("=>=>=>=>=>=>=>=>=> ADMIN POST /admin/vehicules <=<=<=<=<=<=");
+        System.out.println("marque : " + vehicule.getMarque() + " | modele : " + vehicule.getModele());
+        System.out.println("prix : " + vehicule.getPrix() + " | km : " + vehicule.getKilometrage());
+        System.out.println("typeOffre : " + vehicule.getTypeOffre());
+        System.out.println("=======================================================");
+
+
         vehiculeRepository.save(vehicule);
         return ResponseEntity.ok("Véhicule ajouté");
     }
@@ -33,6 +42,15 @@ public class AdminController {
     @PutMapping("/vehicules/{id}")
     public ResponseEntity<?> modifierVehicule(@PathVariable Long id, @RequestBody Vehicule
             vehicule) {
+
+
+        System.out.println("=====================JE SUIS DANS AMIN_CONTROLEUR==================================");
+        System.out.println("=>=>=>=>=>=>=>=>=> ADMIN PUT /admin/vehicules/" + id + " <=<=<=<=<=<=<=<=<=<=<=<=");
+        System.out.println("marque : " + vehicule.getMarque() + " | modele : " + vehicule.getModele());
+        System.out.println("prix : " + vehicule.getPrix() + " | typeOffre : " + vehicule.getTypeOffre());
+        System.out.println("=======================================================");
+
+
         if (!vehiculeRepository.existsById(id)) {
              return ResponseEntity.notFound().build();
         }
@@ -46,6 +64,13 @@ public class AdminController {
     // Supprimer un véhicule
     @DeleteMapping("/vehicules/{id}")
     public ResponseEntity<?> supprimerVehicule(@PathVariable Long id) {
+
+
+        System.out.println("====================JE SUIS DANS AMIN_CONTROLEUR===================================");
+        System.out.println("=>=>=>=>=>=>=>=>=> ADMIN DELETE /admin/vehicules/" + id + " <=<=<=<=<=<=");
+        System.out.println("=======================================================");
+
+
         if (!vehiculeRepository.existsById(id)) {
             return ResponseEntity.notFound().build();
 
@@ -64,6 +89,14 @@ public class AdminController {
 
     @PutMapping("/dossiers/{id}")
     public ResponseEntity<?> mettreAJourDossier(@PathVariable Long id, @RequestBody Dossier dossier) {
+
+        System.out.println("==================JE SUIS DANS AMIN_CONTROLEUR=====================================");
+        System.out.println("=>=>=>=>=>=> ADMIN PUT /admin/dossiers/" + id + " <=<=<=<=<=<=");
+        System.out.println("nouveau statut : " + dossier.getStatut());
+        System.out.println("=======================================================");
+
+
+
         if (dossierRepository.findById(id).isEmpty()) {
             return ResponseEntity.notFound().build();
         }
