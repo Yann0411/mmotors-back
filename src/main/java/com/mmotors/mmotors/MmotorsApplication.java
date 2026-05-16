@@ -8,8 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class MmotorsApplication {
 
-    public static void main(String[] args) {
 
+
+    public static void main(String[] args) {
+        System.out.println("SERVEUR QUI DEMARRE ===");
         SpringApplication.run(MmotorsApplication.class, args);
     }
 

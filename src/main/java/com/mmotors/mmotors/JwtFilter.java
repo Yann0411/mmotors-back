@@ -27,6 +27,9 @@ public class JwtFilter extends OncePerRequestFilter {
     private final ClientRepository clientRepository;
 
     public JwtFilter(JwtService jwtService, ClientRepository clientRepository) {
+
+        System.out.println("=>=>=>=>=>=>JE SUIS DANS JWTFILTER<=<=<=<=<=<=<=<=<=");
+        System.out.println("=>=>=>=>=>=>J'injecte jwtService et ClientRepository<=<=<=<=<=<=<=<=<=");
         this.jwtService = jwtService;
         this.clientRepository = clientRepository;
     }
@@ -38,6 +41,11 @@ public class JwtFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
 
         String header = request.getHeader("Authorization");
+
+
+        System.out.println("=>=>=>=>=>=>JE SUIS DANS JWTFILTER<=<=<=<=<=<=<=<=<=");
+        System.out.println("=>=>=>=>=>=>=>=>=>=>URL appelée: " + request.getRequestURI() + "<=<=<=<=<=<=<=<=<=<=<=<");
+        System.out.println("=>=>=>=>=>=>=>Authorisation header : "+ header + "<=<=<=<=<=<=<=<=<=");
 
         if (header != null && header.startsWith("Bearer ")) {
             String token = header.substring(7);

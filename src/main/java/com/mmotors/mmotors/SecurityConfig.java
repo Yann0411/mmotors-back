@@ -18,14 +18,20 @@ import java.util.List;
 @EnableWebSecurity
 public class SecurityConfig {
 
+
     private final JwtFilter jwtFilter;
 
     public SecurityConfig(JwtFilter jwtFilter) {
+        System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS LE SECURITY_CONFIG<=<=<=<=<=<=<=<=<=<=");
+        System.out.println("=>=>=>=>=>=>=>=>=>J'injecte le jwtFilter dans security Config<=<=<=<=<=<=<=<=<=<=<=<=");
         this.jwtFilter = jwtFilter;
     }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
+        System.out.println("=>=>=>=>=>=>=>=>=>=>JE SUIS DANS LE SECURITY_CONFIG<=<=<=<=<=<=<=<=<=<=<=<=<<=");
+        System.out.println("=>=>=>=>=>=>=>=>=>SECURITY_FILTER_CHAIN <=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
 
         http
                   .cors(cors -> cors.configurationSource(corsConfigurationSource()))
@@ -41,6 +47,9 @@ public class SecurityConfig {
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
+
+        System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS LE SECURITY_CONFIG<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
+        System.out.println("=>=>=>=>=>=>=>=>=>=> CORS_CONFIGURATION_SOURCE<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOrigins(List.of("http://127.0.0.1:5500", "http://localhost:5500"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
