@@ -12,7 +12,17 @@ public class DossierController {
      private final DossierRepository dossierRepository;
 
     public DossierController(DossierRepository dossierRepository) {
+
+        System.out.println("=================JE SUIS DANS DOSSIER_CONTROLLER=============================");
+        System.out.println("=>=>=>=>=>=> REQUÊTE REÇUE /dossiers <=<=<=<=<=<=");
+        System.out.println("typeOffre reçu : " + dossier.getTypeOffre());
+        System.out.println("message reçu : " + dossier.getMessage());
+        System.out.println("email client (JWT) : " + email);
+        System.out.println("statut : EN_ATTENTE");
+        System.out.println("=======================================================");
+
         this.dossierRepository = dossierRepository;
+
 
 
     }

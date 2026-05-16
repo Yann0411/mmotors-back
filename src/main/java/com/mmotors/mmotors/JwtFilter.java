@@ -42,11 +42,11 @@ public class JwtFilter extends OncePerRequestFilter {
 
         String header = request.getHeader("Authorization");
 
-
+        System.out.println("=======================================================");
         System.out.println("=>=>=>=>=>=>JE SUIS DANS JWTFILTER<=<=<=<=<=<=<=<=<=");
         System.out.println("=>=>=>=>=>=>=>=>=>=>URL appelée: " + request.getRequestURI() + "<=<=<=<=<=<=<=<=<=<=<=<");
         System.out.println("=>=>=>=>=>=>=>Authorisation header : "+ header + "<=<=<=<=<=<=<=<=<=");
-
+        System.out.println("=======================================================");
         if (header != null && header.startsWith("Bearer ")) {
             String token = header.substring(7);
             if (jwtService.tokenValide(token)) {

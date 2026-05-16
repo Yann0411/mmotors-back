@@ -13,11 +13,16 @@ import java.util.List;
 
     private VehiculeRepository vehiculeRepository;
      public VehiculeController(VehiculeRepository vehiculeRepository) {
-          this.vehiculeRepository = vehiculeRepository;
+
+         System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS VEHICULE_CONTROLLER<=<=<=<=<=<=<=<=<=");
+         System.out.println("=>=>=>=>=>=>=>=>=>J'injecte vehiculeRepository<=<=<=<=<=<=<=<=<=");
+
+         this.vehiculeRepository = vehiculeRepository;
     }
 
     @GetMapping
      public List<Vehicule> getAllVehicules(
+
             @RequestParam(required = false) String typeOffre,
 
             @RequestParam(required = false) String marque,
@@ -26,11 +31,19 @@ import java.util.List;
             @RequestParam(required = false) Double prixMax,
             @RequestParam(required = false) Integer kilometrageMax) {
 
-         if  (marque != null || modele != null || prixMin != null || prixMax != null || kilometrageMax != null) {
+        System.out.println("=========JE SUIS DANS VEHICULE_CONTROLLER=========");
+        System.out.println("=>=>=>=>=>=> Resquest REÇUE /vehicules <=<=<=<=<=<=");
+        System.out.println("typeOffre reçu : " + typeOffre);
+        System.out.println("marque reçue : " + marque);
+        System.out.println("prixMin reçu : " + prixMin);
+        System.out.println("prixMax reçu : " + prixMax);
+        System.out.println("kilometrageMax reçu : " + kilometrageMax);
+        System.out.println("=======================================================");
 
-             return vehiculeRepository
 
-                    .findByTypeOffreAndMarqueContainingIgnoreCaseAndModeleContainingIgnoreCaseAndPrixBetweenAndKilometrageIsLessThanEqual(
+        if  (marque != null || modele != null || prixMin != null || prixMax != null || kilometrageMax != null) {
+
+             return vehiculeRepository.findByTypeOffreAndMarqueContainingIgnoreCaseAndModeleContainingIgnoreCaseAndPrixBetweenAndKilometrageIsLessThanEqual(
 
                             typeOffre != null ? typeOffre : "",
                             marque != null ? marque : "",

@@ -29,12 +29,20 @@ public class AuthController {
 
     @PostMapping("/inscription")
     public ResponseEntity<?> inscription(@Valid @RequestBody Client client) {
-        System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS AUTH_CONTROLLER<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
-        System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS AUTH_CONTROLLER /inscription<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
+        System.out.println("==================================================================");
+        System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS AUTH_CONTROLLER /INSCRIPTION<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
+        System.out.println("Nom reçu : " + client.getNom());
+        System.out.println("Email reçu : " + client.getEmail());
+        System.out.println("mdp visible reçu : " + client.getMotDePasse() );
+
          if (clientRepository.findByEmail(client.getEmail()).isPresent()) {
              return ResponseEntity.badRequest().body("Email déjà utilisé");
         }
         client.setMotDePasse(passwordEncoder.encode(client.getMotDePasse()));
+
+        System.out.println("mdp crypté reçu : " + client.getMotDePasse() );
+        System.out.println("==================================================================");
+
          client.setRole("CLIENT");
          clientRepository.save(client);
         return ResponseEntity.ok("Inscription réussie");
@@ -54,12 +62,14 @@ public class AuthController {
 
         Optional<Client> clientOpt = clientRepository.findByEmail(email);
 
-        System.out.println("vérif email avec client repository: " + clientOpt);
+
         if (clientOpt.isEmpty()) {
             return ResponseEntity.badRequest().body("Email introuvable");
         }
-
+        System.out.println("vérif ClientOPT avant  LE GET " + clientOpt);
         Client client = clientOpt.get();
+        System.out.println("vérif ClientOPT Apres le GET" + clientOpt);
+        System.out.println("vérif ClientOPT Apres le GET" + client);
          if (!passwordEncoder.matches(motDePasse, client.getMotDePasse())) {
             return ResponseEntity.badRequest().body("Mot de passe incorrect");
         }
@@ -70,6 +80,7 @@ public class AuthController {
          Map<String, String> resultat = new HashMap<>();
         resultat.put("token", token);
         resultat.put("nom", client.getNom());
+        resultat.put("role",client.getRole());
         return ResponseEntity.ok(resultat);
     }
 }
