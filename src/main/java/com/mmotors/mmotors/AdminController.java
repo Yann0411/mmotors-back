@@ -104,7 +104,25 @@ public class AdminController {
         d.setStatut(dossier.getStatut());
         dossierRepository.save(d);
         return ResponseEntity.ok("Dossier mis à jour");
+
+
+
+
     }
+
+
+    @DeleteMapping("/dossiers/{id}")
+    public ResponseEntity<?> supprimerDossier(@PathVariable Long id) {
+        System.out.println("====================JE SUIS DANS AMIN_CONTROLEUR===================================");
+        System.out.println("=>=>=>=>=>=>=>=>=> ADMIN DELETE /admin/dossiers/" + id + " <=<=<=<=<=<=");
+        System.out.println("=======================================================");
+        if (!dossierRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+        dossierRepository.deleteById(id);
+        return ResponseEntity.ok("Dossier supprimé");
+    }
+
 
 }
 
