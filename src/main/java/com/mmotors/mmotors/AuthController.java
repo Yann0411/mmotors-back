@@ -79,7 +79,7 @@ public class AuthController {
         System.out.println("Token Généré : " + token);
          Map<String, String> resultat = new HashMap<>();
         resultat.put("token", token);
-        resultat.put("nom", client.getNom());
+        resultat.put("nom", client.getPrenom());
         resultat.put("role",client.getRole());
         return ResponseEntity.ok(resultat);
     }
