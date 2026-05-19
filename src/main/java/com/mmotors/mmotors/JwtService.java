@@ -13,8 +13,7 @@ import java.util.Date;
 @Service
 public class JwtService {
 
-    @Value("${jwt.secret}")
-    private String SECRET_KEY;
+    private static final String SECRET_KEY = "mmotors-bachelor-developpeur-application-yann-2026-bloc3";
 
     public String genererToken(String email) {
 
