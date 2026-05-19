@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/admin")
@@ -98,10 +99,12 @@ public class AdminController {
 
 
 
-        if (dossierRepository.findById(id).isEmpty()) {
+        Optional<Dossier> optDossier = dossierRepository.findById(id);
+        if (optDossier.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
-        Dossier d = dossierRepository.findById(id).get();
+        Dossier d = optDossier.get();
+
         d.setStatut(dossier.getStatut());
         dossierRepository.save(d);
         return ResponseEntity.ok("Dossier mis à jour");
