@@ -25,7 +25,7 @@ public class Vehicule {
     private String modele;
 
     @NotNull(message = "L'année est obligatoire")
-    @Min(value = 1900, message = "L'année doit être supérieure à 1900")
+    @Min(value = 1900, message = "L'année doit être supérieure ou égale à 1900")
     private Integer annee;
 
     @NotNull(message = "Le prix est obligatoire")

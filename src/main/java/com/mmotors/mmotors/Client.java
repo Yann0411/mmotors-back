@@ -14,20 +14,20 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "Le nom est obligatoire")
     private String nom;
 
-    @NotBlank
+    @NotBlank(message = "Le prénom est obligatoire")
     private String prenom;
 
-    @NotBlank
-    @Email
+    @NotBlank(message = "L'email est obligatoire")
+    @Email(message = "L'email n'est pas valide")
     @Column(unique = true)
     private String email;
 
-    @NotBlank
-    @Pattern(regexp = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$", message = "Le mot de passe doit avoir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial")
 
+    @Pattern(regexp = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$", message = "Le mot de passe doit avoir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial")
+    @NotBlank(message = "Le mot de passe est obligatoire")
     private String motDePasse;
 
     private String role;

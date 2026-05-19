@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
         List<String> erreurs = ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
-                .map(error -> error.getField() + " : " + error.getDefaultMessage())
+                .map(error -> error.getDefaultMessage())
                 .collect(Collectors.toList());
         return ResponseEntity.badRequest().body(erreurs);
     }
