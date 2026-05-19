@@ -21,7 +21,7 @@ public class Vehicule {
     @NotBlank(message = "La marque est obligatoire")
     private String marque;
 
-    @NotBlank(message = "La modèle est obligatoire")
+    @NotBlank(message = "Le modèle est obligatoire")
     private String modele;
 
     @NotNull(message = "L'année est obligatoire")
