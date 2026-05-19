@@ -1,5 +1,6 @@
 package com.mmotors.mmotors;
 
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +24,7 @@ public class AdminController {
 
     // Ajouter un vehicule
     @PostMapping("/vehicules")
-    public ResponseEntity<?> ajouterVehicule(@RequestBody Vehicule vehicule) {
+    public ResponseEntity<?> ajouterVehicule(@Valid @RequestBody Vehicule vehicule) {
 
         System.out.println("===================JE SUIS DANS AMIN_CONTROLEUR====================================");
         System.out.println("=>=>=>=>=>=>=>=>=> ADMIN POST /admin/vehicules <=<=<=<=<=<=");
@@ -40,7 +41,7 @@ public class AdminController {
 
     // Modifier un véhicule
     @PutMapping("/vehicules/{id}")
-    public ResponseEntity<?> modifierVehicule(@PathVariable Long id, @RequestBody Vehicule
+    public ResponseEntity<?> modifierVehicule(@PathVariable Long id, @Valid @RequestBody Vehicule
             vehicule) {
 
 

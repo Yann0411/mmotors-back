@@ -5,6 +5,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+
 @Entity
 public class Vehicule {
 
@@ -12,12 +18,25 @@ public class Vehicule {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-     private String marque;
-    private String modele;
-    private int annee;
-    private double prix;
-    private int kilometrage;
+    @NotBlank(message = "La marque est obligatoire")
+    private String marque;
 
+    @NotBlank(message = "La modèle est obligatoire")
+    private String modele;
+
+    @NotNull(message = "L'année est obligatoire")
+    @Min(value = 1900, message = "L'année doit être supérieure à 1900")
+    private Integer annee;
+
+    @NotNull(message = "Le prix est obligatoire")
+    @Min(value = 0, message = "Le prix ne peut pas être négatif")
+    private Double prix;
+
+    @NotNull(message = "Le kilométrage est obligatoire")
+    @Min(value = 0, message = "Le kilométrage ne peut pas être négatif")
+    private Integer kilometrage;
+
+    @NotBlank(message = "Le type d'offre est obligatoire")
     private String typeOffre;
 
     public Long getId() { return id; }
@@ -29,14 +48,14 @@ public class Vehicule {
     public String getModele() { return modele; }
     public void setModele(String modele) { this.modele = modele; }
 
-    public int getAnnee() { return annee; }
-    public void setAnnee(int annee) { this.annee = annee; }
+    public Integer getAnnee() { return annee; }
+    public void setAnnee(Integer annee) { this.annee = annee; }
 
-    public double getPrix() { return prix; }
-    public void setPrix(double prix) { this.prix = prix; }
+    public Double getPrix() { return prix; }
+    public void setPrix(Double prix) { this.prix = prix; }
 
-    public int getKilometrage() { return kilometrage; }
-    public void setKilometrage(int kilometrage) { this.kilometrage = kilometrage; }
+    public Integer getKilometrage() { return kilometrage; }
+    public void setKilometrage(Integer kilometrage) { this.kilometrage = kilometrage; }
 
     public String getTypeOffre() { return typeOffre; }
     public void setTypeOffre(String typeOffre) { this.typeOffre = typeOffre; }
