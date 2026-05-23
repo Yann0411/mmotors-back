@@ -19,7 +19,7 @@ import static org.mockito.Mockito.*;
 class JwtFilterTest {
 
     @Mock
-    private JwtService jwtService;
+    private JwtServiceOld jwtService;
 
     @Mock
     private ClientRepository clientRepository;

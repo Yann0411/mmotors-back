@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JwtServiceTest {
 
-    private final JwtService jwtService = new JwtService();
+    private final JwtServiceOld jwtService = new JwtServiceOld();
 
     @Test
     void testgenererToken() {

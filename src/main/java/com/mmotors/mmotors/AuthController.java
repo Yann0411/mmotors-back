@@ -33,7 +33,7 @@ public class AuthController {
         System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS AUTH_CONTROLLER /INSCRIPTION<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
         System.out.println("Nom reçu : " + client.getNom());
         System.out.println("Email reçu : " + client.getEmail());
-        System.out.println("mdp visible reçu : " + client.getMotDePasse() );
+
 
          if (clientRepository.findByEmail(client.getEmail()).isPresent()) {
              return ResponseEntity.badRequest().body("Email déjà utilisé");
@@ -55,7 +55,7 @@ public class AuthController {
         System.out.println("=>=>=>=>=>=>=>=>AUTH_CONTROLLER DECLENCHE<=<=<=<=<=<=<=<=<=<=<=<=<=");
         System.out.println("=>=>=>=>=>=>=>=>=>CONNEXION REÇU <=<=<=<=<=<=<=<=<=<=<=<=<=");
         System.out.println("Email reçu : " + body.get("email"));
-        System.out.println("mdp reçu : " + body.get("motDePasse"));
+
 
         String email = body.get("email");
         String motDePasse = body.get("motDePasse");

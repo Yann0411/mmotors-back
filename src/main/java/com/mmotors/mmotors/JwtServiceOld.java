@@ -3,7 +3,6 @@ package com.mmotors.mmotors;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -11,40 +10,36 @@ import java.util.Date;
 
 
 @Service
-public class JwtService {
+public class JwtServiceOld {
 
-    private final String secretKey;
-
-    public JwtService(@Value("${jwt.secret.key}") String secretKey) {
-        this.secretKey = secretKey;
-    }
+    private static final String SECRET_KEY = "mmotors-bachelor-developpeur-application-yann-2026-bloc3";
 
     public String genererToken(String email) {
 
         System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS JWTSERVICE<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
         System.out.println("=>=>=>=>=>=>=>=>=>/GENERER_TOKEN<=<=<=<=<=<=<<=<=<=<=<=<=<=<=");
         Date maintenant = new Date();
-        Date expiration = new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 24);
+         Date expiration = new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 24);
 
         return Jwts.builder()
-                .subject(email)
+                 .subject(email)
                 .issuedAt(maintenant)
                 .expiration(expiration)
-                .signWith(Keys.hmacShaKeyFor(secretKey.getBytes()))
+                .signWith(Keys.hmacShaKeyFor(SECRET_KEY.getBytes()))
                 .compact();
     }
 
-    public String extraireEmail(String token) {
+       public String extraireEmail(String token) {
 
-        System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS JWTSERVICE<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
-        System.out.println("=>=>=>=>=>=>=>=>=>EXTRAIRE_EMAIL<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
+           System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS JWTSERVICE<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
+           System.out.println("=>=>=>=>=>=>=>=>=>EXTRAIRE_EMAIL<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
         var claims = Jwts.parser()
-                .verifyWith(Keys.hmacShaKeyFor(secretKey.getBytes()))
+                .verifyWith(Keys.hmacShaKeyFor(SECRET_KEY.getBytes()))
                 .build()
                 .parseSignedClaims(token)
                 .getPayload();
 
-        return claims.getSubject();
+            return claims.getSubject();
     }
 
     public boolean tokenValide(String token) {
