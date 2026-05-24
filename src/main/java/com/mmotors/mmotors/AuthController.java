@@ -76,12 +76,38 @@ public class AuthController {
 
         String token = jwtService.genererToken(client.getEmail());
         System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS AUTH_CONTROLLER /connexion<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
-       
+
          Map<String, String> resultat = new HashMap<>();
         resultat.put("token", token);
         resultat.put("nom", client.getPrenom());
         resultat.put("role",client.getRole());
         return ResponseEntity.ok(resultat);
     }
+
+    @PostMapping("/reinitialiser-mot-de-passe")
+
+    public ResponseEntity<?> reinitialiserMotDePasse(@RequestBody Map<String, String> body) {
+        String email = body.get("email");
+        String nouveauMotDePasse = body.get("nouveauMotDePasse");
+
+        if (email == null || nouveauMotDePasse == null) {
+            return ResponseEntity.badRequest().body("Champs manquants.");
+        }
+        Optional<Client> clientOpt = clientRepository.findByEmail(email);
+              if (clientOpt.isEmpty()) {
+            return ResponseEntity.badRequest().body("Aucun compte associé à cet email.");
+
+        }
+
+              
+        if (!nouveauMotDePasse.matches("^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$")) {
+
+            return ResponseEntity.badRequest().body("Le mot de passe doit contenir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial (!@#$%^&*).");
+        }
+        clientRepository.updateMotDePasse(email, passwordEncoder.encode(nouveauMotDePasse));
+
+        return ResponseEntity.ok("Mot de passe réinitialisé avec succès.");
+    }
+
 }
 
