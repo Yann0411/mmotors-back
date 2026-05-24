@@ -99,7 +99,7 @@ public class AuthController {
 
         }
 
-              
+
         if (!nouveauMotDePasse.matches("^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$")) {
 
             return ResponseEntity.badRequest().body("Le mot de passe doit contenir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial (!@#$%^&*).");

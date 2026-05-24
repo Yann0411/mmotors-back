@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.*;
  import java.time.LocalDate;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
+import java.util.Optional;
+import java.util.Map;
 
 
 @RestController
@@ -38,6 +40,10 @@ public class DossierController {
         System.out.println("=======================================================");
 
         dossier.setStatut("EN_ATTENTE");
+        if (dossierRepository.existsByClientEmailAndStatut(email, "EN_ATTENTE")) {
+            return ResponseEntity.badRequest().body("Vous avez déjà un dossier en attente. Annulez-le avant d'en déposer un nouveau.");
+        }
+
         dossier.setDateDepot(LocalDate.now().toString());
         List<String> typesValides = List.of("ACHAT", "LOCATION", "LOCATION_ACHAT");
         if (!typesValides.contains(dossier.getTypeOffre())) {
@@ -65,4 +71,48 @@ public class DossierController {
 
 
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> annulerDossier(@PathVariable Long id) {
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        Optional<Dossier> dossierOpt = dossierRepository.findById(id);
+        if (dossierOpt.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        Dossier dossier = dossierOpt.get();
+        if (!dossier.getClientEmail().equals(email)) {
+            return ResponseEntity.status(403).body("Accès refusé.");
+        }
+        if (!"EN_ATTENTE".equals(dossier.getStatut())) {
+            return ResponseEntity.badRequest().body("Seuls les dossiers en attente peuvent être annulés.");
+        }
+        dossierRepository.delete(dossier);
+        return ResponseEntity.ok("Dossier annulé.");
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<?> modifierDossier(@PathVariable Long id, @RequestBody Map<String, String> body) {
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        Optional<Dossier> dossierOpt = dossierRepository.findById(id);
+        if (dossierOpt.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        Dossier dossier = dossierOpt.get();
+        if (!dossier.getClientEmail().equals(email)) {
+            return ResponseEntity.status(403).body("Accès refusé.");
+        }
+        if (!"EN_ATTENTE".equals(dossier.getStatut())) {
+            return ResponseEntity.badRequest().body("Seuls les dossiers en attente peuvent être modifiés.");
+        }
+        String nouveauMessage   = body.get("message");
+        String nouveauTypeOffre = body.get("typeOffre");
+        List<String> typesValides = List.of("ACHAT", "LOCATION", "LOCATION_ACHAT");
+        if (nouveauTypeOffre != null && !typesValides.contains(nouveauTypeOffre)) {
+            return ResponseEntity.badRequest().body("Type d'offre invalide.");
+        }
+        if (nouveauMessage   != null) dossier.setMessage(nouveauMessage);
+        if (nouveauTypeOffre != null) dossier.setTypeOffre(nouveauTypeOffre);
+        dossierRepository.save(dossier);
+        return ResponseEntity.ok("Dossier modifié.");
+    }
+
 }

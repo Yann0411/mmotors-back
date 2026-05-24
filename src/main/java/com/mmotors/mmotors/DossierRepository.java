@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface DossierRepository extends JpaRepository<Dossier, Long> {
     List<Dossier> findByClientEmail(String clientEmail);
+    boolean existsByClientEmailAndStatut(String clientEmail, String statut);
 }
