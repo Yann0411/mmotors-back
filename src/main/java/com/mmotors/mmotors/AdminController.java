@@ -35,13 +35,15 @@ public class AdminController {
         System.out.println("=======================================================");
 
 
-        vehiculeRepository.save(vehicule);
+
         List<String> typesValides = List.of("ACHAT", "LOCATION", "LOCATION_ACHAT");
         if (!typesValides.contains(vehicule.getTypeOffre())) {
             return ResponseEntity.badRequest().body("Type d'offre invalide.");
         }
+        vehiculeRepository.save(vehicule);
         return ResponseEntity.ok("Véhicule ajouté");
     }
+
 
 
     // Modifier un véhicule
