@@ -4,6 +4,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
  import java.time.LocalDate;
 import java.util.List;
+import org.springframework.http.ResponseEntity;
+
 
 @RestController
 @RequestMapping("/dossiers")
@@ -21,7 +23,7 @@ public class DossierController {
     }
 
     @PostMapping
-    public String deposerDossier(@RequestBody Dossier dossier) {
+    public ResponseEntity<?> deposerDossier(@RequestBody Dossier dossier) {
 
 
         String email = SecurityContextHolder.getContext().getAuthentication().getName();
@@ -37,8 +39,14 @@ public class DossierController {
 
         dossier.setStatut("EN_ATTENTE");
         dossier.setDateDepot(LocalDate.now().toString());
+        List<String> typesValides = List.of("ACHAT", "LOCATION", "LOCATION_ACHAT");
+        if (!typesValides.contains(dossier.getTypeOffre())) {
+            return ResponseEntity.status(400).body("Type d'offre invalide.");
+        }
+
         dossierRepository.save(dossier);
-        return "Dossier déposé avec succès";
+        return ResponseEntity.ok("Dossier déposé avec succès");
+
     }
 
     @GetMapping("/moi")

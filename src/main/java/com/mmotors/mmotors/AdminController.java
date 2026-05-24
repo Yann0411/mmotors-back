@@ -36,6 +36,10 @@ public class AdminController {
 
 
         vehiculeRepository.save(vehicule);
+        List<String> typesValides = List.of("ACHAT", "LOCATION", "LOCATION_ACHAT");
+        if (!typesValides.contains(vehicule.getTypeOffre())) {
+            return ResponseEntity.badRequest().body("Type d'offre invalide.");
+        }
         return ResponseEntity.ok("Véhicule ajouté");
     }
 
