@@ -76,7 +76,7 @@ public class AuthController {
 
         String token = jwtService.genererToken(client.getEmail());
         System.out.println("=>=>=>=>=>=>=>=>=>JE SUIS DANS AUTH_CONTROLLER /connexion<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=");
-        System.out.println("Token Généré : " + token);
+       
          Map<String, String> resultat = new HashMap<>();
         resultat.put("token", token);
         resultat.put("nom", client.getPrenom());
