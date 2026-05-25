@@ -15,6 +15,7 @@ public class Dossier {
     private String dateDepot;
     private String message;
     private String telephone;
+    private String vehiculeInfo;
 
 
 
@@ -31,6 +32,9 @@ public class Dossier {
     public void setMessage(String message) { this.message = message; }
     public String getTelephone() { return telephone; }
     public void setTelephone(String telephone) { this.telephone = telephone; }
+    public String getVehiculeInfo() { return vehiculeInfo; }
+    public void setVehiculeInfo(String vehiculeInfo) { this.vehiculeInfo = vehiculeInfo; }
+
 
 
 }
