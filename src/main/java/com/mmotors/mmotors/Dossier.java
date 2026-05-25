@@ -14,6 +14,9 @@ public class Dossier {
     private String statut;
     private String dateDepot;
     private String message;
+    private String telephone;
+
+
 
     public Long getId() { return id; }
     public String getClientEmail() { return clientEmail; }
@@ -26,6 +29,8 @@ public class Dossier {
     public void setDateDepot(String dateDepot) { this.dateDepot = dateDepot; }
     public String getMessage() { return message; }
     public void setMessage(String message) { this.message = message; }
+    public String getTelephone() { return telephone; }
+    public void setTelephone(String telephone) { this.telephone = telephone; }
 
 
 }

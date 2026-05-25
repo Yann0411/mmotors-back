@@ -105,6 +105,10 @@ public class DossierController {
         }
         String nouveauMessage   = body.get("message");
         String nouveauTypeOffre = body.get("typeOffre");
+
+        String telephone = body.get("telephone");
+        if (telephone != null) dossier.setTelephone(telephone);
+
         List<String> typesValides = List.of("ACHAT", "LOCATION", "LOCATION_ACHAT");
         if (nouveauTypeOffre != null && !typesValides.contains(nouveauTypeOffre)) {
             return ResponseEntity.badRequest().body("Type d'offre invalide.");
