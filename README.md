@@ -123,7 +123,7 @@ L'API est disponible sur `http://localhost:8080`.
 mvn test
 ```
 
-Rapport JaCoCo généré dans `target/site/jacoco/index.html` — couverture actuelle : **87%**.
+Rapport JaCoCo généré dans `target/site/jacoco/index.html` — couverture actuelle : **88%**.
 
 ---
 

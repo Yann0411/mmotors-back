@@ -1,0 +1,1253 @@
+2026-05-27 07:36:13 [INFO] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-27 07:36:13 [INFO] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-27 07:36:13 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:36:13 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:36:13 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:36:17 [INFO] c.m.m.VehiculeControllerIntegrationTest - Starting VehiculeControllerIntegrationTest using Java 21.0.10 with PID 2200079 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:36:17 [INFO] c.m.m.VehiculeControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:36:17 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:36:18 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:36:18 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:36:18 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:36:18 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:36:19 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:36:19 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:36:19 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:36:19 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:36:19 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:36:19 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:36:20 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:36:20 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:36:20 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:36:21 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:36:21 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 00ca93f3-0e1d-4f5b-b4c4-fd344635d811
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:36:21 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:36:21 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:36:21 [INFO] c.m.m.VehiculeControllerIntegrationTest - Started VehiculeControllerIntegrationTest in 4.899 seconds (process running for 6.2)
+2026-05-27 07:36:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:36:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 07:36:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:36:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 07:36:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:36:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:36:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:36:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:36:23 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:36:23 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:36:23 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:36:23 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:36:23 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:36:24 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:36:24 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:36:32 [INFO] c.mmotors.mmotors.MmotorsApplication - Starting MmotorsApplication using Java 21.0.10 with PID 2200351 (/home/yann/Documents/JAVA/mmotors/mmotors/target/classes started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:36:32 [INFO] c.mmotors.mmotors.MmotorsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:36:32 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:36:33 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:36:33 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:36:33 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-27 07:36:33 [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 07:36:33 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-27 07:36:33 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-27 07:36:33 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1023 ms
+2026-05-27 07:36:33 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:36:33 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:36:34 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:36:34 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:36:34 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3945886e
+2026-05-27 07:36:34 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:36:34 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mmotors]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: mmotors/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:36:35 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:36:35 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:36:35 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:36:35 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:36:35 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4aa32ff3-fcb6-4b47-8e14-ea4987364a7b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:36:35 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:36:36 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:36:36 [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 07:36:36 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 07:36:36 [INFO] c.mmotors.mmotors.MmotorsApplication - Started MmotorsApplication in 4.179 seconds (process running for 4.676)
+2026-05-27 07:36:36 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 07:36:36 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-27 07:36:36 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-27 07:36:57 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2200817 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:36:57 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:36:57 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:36:58 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:36:58 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:36:59 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:36:59 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:36:59 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:36:59 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:37:00 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:37:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:37:00 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:37:00 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:37:01 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:37:01 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:37:01 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:37:03 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:37:03 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2827dfca-7650-45da-a26c-b1f301a4e68d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:37:03 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:37:04 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:37:04 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 7.119 seconds (process running for 9.432)
+2026-05-27 07:37:05 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:37:05 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:37:05 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:37:05 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:37:05 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:37:05 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:37:05 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:37:05 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:37:06 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:37:06 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:37:06 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:37:06 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:37:07 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:37:07 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:37:07 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:37:56 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2201791 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:37:56 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:37:57 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:37:57 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:37:57 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:37:58 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:37:58 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:37:59 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:37:59 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:37:59 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:37:59 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:37:59 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:37:59 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:38:00 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:38:00 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:38:00 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:38:02 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:38:02 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 01d688ea-8741-4e25-913c-d77e03eafe73
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:38:02 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:38:03 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:38:03 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 6.702 seconds (process running for 9.247)
+2026-05-27 07:38:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:38:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:38:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:38:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:38:05 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:05 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:38:05 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:05 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:38:06 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:38:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:38:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:38:35 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2202336 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:38:35 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:38:36 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:38:36 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:38:36 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:38:37 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:38:37 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:38:38 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:38:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:38:38 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:38:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:38:38 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:38:38 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:38:39 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:38:39 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:38:39 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:38:41 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:38:41 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 94551858-318c-4857-8256-8467c4106042
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:38:41 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:38:41 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:38:41 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 6.251 seconds (process running for 8.108)
+2026-05-27 07:38:42 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:42 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:38:42 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:42 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:38:43 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:43 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:38:43 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:43 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:38:44 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:44 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:38:44 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:38:44 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:38:44 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:38:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:38:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:42:03 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2204934 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:42:03 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:42:04 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:42:04 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:42:04 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:42:05 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:42:05 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:42:05 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:42:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:42:06 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:42:06 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:42:06 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:42:06 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:42:07 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:42:07 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:42:07 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:42:09 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:42:09 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fc8ac81d-5f4b-4612-acfd-1c4c1447c1ef
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:42:09 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:42:10 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:42:10 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 6.853 seconds (process running for 8.799)
+2026-05-27 07:42:11 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:11 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:42:11 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:11 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:42:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:42:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:42:13 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:13 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:42:13 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:13 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:42:14 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:14 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:42:14 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:42:14 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:42:14 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:42:14 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:42:14 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:43:19 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2205899 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:43:19 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:43:20 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:43:20 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:43:20 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:43:21 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:43:21 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:43:21 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:43:22 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:43:22 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:43:22 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:43:22 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:43:22 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:43:23 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:43:23 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:43:23 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:43:24 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:43:24 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 93377009-f886-4dfa-8aa6-373048e50d71
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:43:25 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:43:25 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:43:25 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 6.413 seconds (process running for 8.944)
+2026-05-27 07:43:26 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:26 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:43:26 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:26 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:43:27 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:27 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:43:27 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:27 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:43:28 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:28 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:43:28 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:28 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:43:28 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:28 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:43:28 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:43:28 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:43:29 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:43:29 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:43:29 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:46:21 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2208215 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:46:21 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:46:21 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:46:22 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:46:22 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:46:22 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:46:22 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:46:23 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:46:23 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:46:23 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:46:23 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:46:23 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:46:23 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:46:25 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:46:25 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:46:25 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:46:26 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:46:26 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 378bfc60-b82e-497f-9d0f-dc2a5c9c13bd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:46:26 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:46:27 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:46:27 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 6.756 seconds (process running for 8.786)
+2026-05-27 07:46:28 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:28 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:46:28 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:28 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:46:29 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:29 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 07:46:29 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:29 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 07:46:29 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:29 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:46:29 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:29 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:46:30 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:30 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:46:30 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:30 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:46:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:46:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:46:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:46:31 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:46:31 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:46:31 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:47:27 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2209089 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:47:27 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:47:27 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:47:28 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:47:28 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:47:29 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:47:29 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:47:29 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:47:29 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:47:30 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:47:30 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:47:30 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:47:30 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:47:31 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:47:31 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:47:31 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:47:33 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:47:33 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 92357c16-9bae-4341-b32a-4a2aa97799ab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:47:33 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:47:34 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:47:34 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 7.301 seconds (process running for 9.297)
+2026-05-27 07:47:34 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:34 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:47:34 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:34 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:47:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 07:47:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 07:47:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:47:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:47:36 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:36 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:47:36 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:36 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 07:47:37 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:37 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:47:37 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:47:37 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:47:37 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:47:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:47:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:50:08 [INFO] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-27 07:50:08 [INFO] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-27 07:50:08 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:50:08 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:50:08 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 07:50:12 [INFO] c.mmotors.mmotors.MmotorsApplication - Starting MmotorsApplication using Java 21.0.10 with PID 2211174 (/home/yann/Documents/JAVA/mmotors/mmotors/target/classes started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:50:12 [INFO] c.mmotors.mmotors.MmotorsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:50:12 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:50:12 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:50:12 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:50:13 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-27 07:50:13 [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 07:50:13 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-27 07:50:13 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-27 07:50:13 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 998 ms
+2026-05-27 07:50:13 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:50:13 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:50:13 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:50:13 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:50:14 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3945886e
+2026-05-27 07:50:14 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:50:14 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mmotors]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: mmotors/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:50:14 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:50:14 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:50:14 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:50:15 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:50:15 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bdda9dfa-92fa-4d3b-a0ef-cb507903be9d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:50:15 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:50:16 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:50:16 [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 07:50:16 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 07:50:16 [INFO] c.mmotors.mmotors.MmotorsApplication - Started MmotorsApplication in 4.207 seconds (process running for 4.65)
+2026-05-27 07:50:16 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 07:50:16 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-27 07:50:16 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-27 07:50:25 [INFO] c.m.m.ProfilControllerIntegrationTest - Starting ProfilControllerIntegrationTest using Java 21.0.10 with PID 2211486 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 07:50:25 [INFO] c.m.m.ProfilControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 07:50:25 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 07:50:25 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 07:50:25 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-05-27 07:50:26 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 07:50:26 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 07:50:26 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 07:50:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 07:50:26 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 07:50:26 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 07:50:26 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 07:50:26 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 07:50:27 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 07:50:27 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:50:27 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 07:50:28 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 07:50:28 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 95c7ea33-68ee-47ea-9e13-74cdeec6e7b0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 07:50:28 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 07:50:29 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 07:50:29 [INFO] c.m.m.ProfilControllerIntegrationTest - Started ProfilControllerIntegrationTest in 4.768 seconds (process running for 5.973)
+2026-05-27 07:50:30 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:30 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:50:30 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:30 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 07:50:30 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:30 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 07:50:30 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:30 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 07:50:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 07:50:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 07:50:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:50:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 07:50:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:50:31 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 07:50:31 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 07:50:32 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 07:50:32 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 07:50:32 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 20:17:31 [INFO] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-27 20:17:31 [INFO] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-05-27 20:17:31 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 20:17:31 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 20:17:31 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 20:17:38 [INFO] c.m.m.ProfilControllerIntegrationTest - Starting ProfilControllerIntegrationTest using Java 21.0.10 with PID 2589391 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 20:17:38 [INFO] c.m.m.ProfilControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 20:17:39 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 20:17:39 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 20:17:39 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2026-05-27 20:17:40 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 20:17:40 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 20:17:41 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 20:17:41 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 20:17:41 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 20:17:41 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 20:17:41 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 20:17:41 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 20:17:42 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 20:17:42 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 20:17:42 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 20:17:44 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 20:17:44 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f7e83b0c-8730-40bf-afc3-3629ba5b286c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 20:17:44 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 20:17:45 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 20:17:45 [INFO] c.m.m.ProfilControllerIntegrationTest - Started ProfilControllerIntegrationTest in 6.827 seconds (process running for 8.56)
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 20:17:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 20:17:48 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:48 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 20:17:48 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 20:17:48 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 20:17:49 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 20:17:49 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 20:17:49 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 21:39:25 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2649396 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 21:39:25 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 21:39:25 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 21:39:26 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 21:39:26 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2026-05-27 21:39:27 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 21:39:27 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 21:39:28 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 21:39:28 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 21:39:28 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 21:39:28 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 21:39:28 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 21:39:28 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 21:39:30 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 21:39:30 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 21:39:30 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 21:39:32 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 21:39:32 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 90922fa2-9ec3-4063-bc05-b66750cf398e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 21:39:32 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 21:39:33 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 21:39:33 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 8.879 seconds (process running for 12.171)
+2026-05-27 21:39:34 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:34 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 21:39:34 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:34 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 21:39:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 21:39:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 21:39:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 21:39:35 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:35 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 21:39:36 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:36 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 21:39:36 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:36 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 21:39:37 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:37 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 21:39:37 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:39:37 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 21:39:38 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 21:39:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 21:39:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 21:54:12 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2660287 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 21:54:12 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 21:54:13 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 21:54:14 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 21:54:14 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2026-05-27 21:54:15 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 21:54:15 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 21:54:16 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 21:54:16 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 21:54:16 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 21:54:16 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 21:54:16 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 21:54:16 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 21:54:18 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 21:54:18 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 21:54:18 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 21:54:21 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 21:54:21 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 26c0cec4-fbef-4526-af11-3422af99dbf8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 21:54:21 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 21:54:22 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 21:54:22 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 10.874 seconds (process running for 14.134)
+2026-05-27 21:54:24 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:24 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 21:54:24 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:24 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 21:54:24 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:24 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 21:54:24 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:24 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 21:54:25 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:25 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 21:54:25 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:25 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 21:54:26 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:26 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 21:54:26 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:26 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 21:54:27 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:27 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 21:54:27 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 21:54:27 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 21:54:28 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 21:54:28 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 21:54:28 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:02:36 [INFO] c.m.m.AdminControllerIntegrationTest - Starting AdminControllerIntegrationTest using Java 21.0.10 with PID 2666354 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:02:36 [INFO] c.m.m.AdminControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:02:36 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:02:37 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:02:37 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:02:38 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:02:38 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:02:39 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:02:39 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:02:39 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 22:02:39 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:02:39 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 22:02:39 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:02:41 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:02:41 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:02:41 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:02:42 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:02:43 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1c5bd1cb-e080-4153-9947-dd3c72bcfa84
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:02:43 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:02:43 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:02:44 [INFO] c.m.m.AdminControllerIntegrationTest - Started AdminControllerIntegrationTest in 8.134 seconds (process running for 11.469)
+2026-05-27 22:02:45 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:45 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:02:45 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:45 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:02:46 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:46 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:02:46 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:46 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:02:46 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:46 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:02:46 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:46 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:02:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 22:02:47 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:47 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 22:02:48 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:48 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:02:48 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:02:48 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:02:48 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:02:48 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 22:02:48 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:29:00 [INFO] c.m.m.ProfilControllerIntegrationTest - Starting ProfilControllerIntegrationTest using Java 21.0.10 with PID 2685402 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:29:00 [INFO] c.m.m.ProfilControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:29:00 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:29:01 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:29:01 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:29:01 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:29:02 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:29:02 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:29:02 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:29:02 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 22:29:02 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:29:03 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 22:29:03 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:29:04 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:29:04 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:29:04 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:29:05 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:29:05 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ced70aee-22e9-4faa-8262-65b378a36b59
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:29:05 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:29:06 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:29:06 [INFO] c.m.m.ProfilControllerIntegrationTest - Started ProfilControllerIntegrationTest in 6.851 seconds (process running for 8.664)
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.JwtServiceTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.JwtServiceTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:29:08 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:08 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:29:09 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:09 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:29:09 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:09 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:29:09 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:09 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:29:09 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:29:09 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:29:10 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:29:10 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 22:29:10 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:31:11 [INFO] com.mmotors.mmotors.JwtServiceTest - Starting JwtServiceTest using Java 21.0.10 with PID 2687078 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:31:11 [INFO] com.mmotors.mmotors.JwtServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:31:12 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:31:12 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:31:12 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:31:14 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:31:14 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:31:14 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:31:14 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:31:15 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 22:31:15 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:31:15 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 22:31:15 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:31:16 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:31:17 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:31:17 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:31:18 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:31:18 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: edf0ded8-22a1-4e94-9ada-7784e777e50f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:31:18 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:31:19 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:31:19 [INFO] com.mmotors.mmotors.JwtServiceTest - Started JwtServiceTest in 8.812 seconds (process running for 10.962)
+2026-05-27 22:31:20 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:20 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:31:20 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:20 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:31:21 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:21 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:31:21 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:21 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:31:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:31:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:31:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:31:22 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:22 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:31:23 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:23 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 22:31:23 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:23 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 22:31:24 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:24 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:31:24 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:31:24 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:31:25 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:31:25 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 22:31:25 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:44:42 [INFO] c.m.m.ProfilControllerIntegrationTest - Starting ProfilControllerIntegrationTest using Java 21.0.10 with PID 2697231 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:44:42 [INFO] c.m.m.ProfilControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:44:42 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:44:43 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:44:43 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:44:43 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:44:43 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:44:44 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:44:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:44:44 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 22:44:44 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:44:44 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 22:44:44 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:44:45 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:44:45 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:44:45 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:44:46 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:44:46 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 07ed67a1-1915-429e-8dae-43c6896eb9d7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:44:46 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:44:46 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:44:46 [INFO] c.m.m.ProfilControllerIntegrationTest - Started ProfilControllerIntegrationTest in 4.716 seconds (process running for 5.817)
+2026-05-27 22:44:46 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:44:46 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 22:44:46 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:44:58 [INFO] c.m.m.ProfilControllerIntegrationTest - Starting ProfilControllerIntegrationTest using Java 21.0.10 with PID 2697502 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:44:58 [INFO] c.m.m.ProfilControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:44:58 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:44:59 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:44:59 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:44:59 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:44:59 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:45:00 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:45:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:45:00 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 22:45:00 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:45:00 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 22:45:00 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:45:00 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:45:00 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:45:01 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:45:01 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:45:01 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8d5d9449-99fe-4fb8-8214-f36fc585db87
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:45:01 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:45:02 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:45:02 [INFO] c.m.m.ProfilControllerIntegrationTest - Started ProfilControllerIntegrationTest in 4.261 seconds (process running for 5.39)
+2026-05-27 22:45:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:45:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:45:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:45:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:45:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.JwtServiceTest
+2026-05-27 22:45:03 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:03 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.JwtServiceTest
+2026-05-27 22:45:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:45:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:45:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:45:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:45:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:45:04 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:45:04 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:45:05 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:45:05 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 22:45:05 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:51:07 [INFO] c.m.m.ProfilControllerIntegrationTest - Starting ProfilControllerIntegrationTest using Java 21.0.10 with PID 2702065 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:51:07 [INFO] c.m.m.ProfilControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:51:07 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:51:08 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:51:08 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:51:08 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:51:08 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:51:08 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:51:09 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:51:09 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 22:51:09 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:51:09 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 22:51:09 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:51:09 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:51:09 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:51:09 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:51:10 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:51:10 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3b247e28-894d-408a-8e91-892d9a2d9831
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:51:10 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:51:11 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:51:11 [INFO] c.m.m.ProfilControllerIntegrationTest - Started ProfilControllerIntegrationTest in 4.145 seconds (process running for 5.24)
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.JwtServiceTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.JwtServiceTest]: JwtServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.JwtServiceTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:51:12 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:12 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 22:51:13 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:13 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:51:13 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 22:51:13 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 22:51:14 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:51:14 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 22:51:14 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-27 22:51:37 [INFO] c.mmotors.mmotors.MmotorsApplication - Starting MmotorsApplication using Java 21.0.10 with PID 2702504 (/home/yann/Documents/JAVA/mmotors/mmotors/target/classes started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 22:51:37 [INFO] c.mmotors.mmotors.MmotorsApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 22:51:37 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 22:51:37 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 22:51:37 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2026-05-27 22:51:38 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-27 22:51:38 [INFO] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 22:51:38 [INFO] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-27 22:51:38 [INFO] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-27 22:51:38 [INFO] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 909 ms
+2026-05-27 22:51:38 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 22:51:38 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 22:51:38 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 22:51:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 22:51:38 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c4786af
+2026-05-27 22:51:38 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 22:51:38 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mmotors]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: mmotors/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 22:51:39 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 22:51:39 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 22:51:39 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 22:51:40 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 22:51:40 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: eb9f7eb9-1153-4576-a0af-33cf405ccb90
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 22:51:40 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 22:51:40 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 22:51:40 [INFO] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 22:51:40 [INFO] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 22:51:40 [INFO] c.mmotors.mmotors.MmotorsApplication - Started MmotorsApplication in 3.981 seconds (process running for 4.429)
+2026-05-27 22:51:41 [INFO] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 22:51:41 [INFO] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-27 22:51:41 [INFO] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-27 23:17:49 [INFO] com.mmotors.mmotors.JwtServiceTest - Starting JwtServiceTest using Java 21.0.10 with PID 2721432 (started by yann in /home/yann/Documents/JAVA/mmotors/mmotors)
+2026-05-27 23:17:49 [INFO] com.mmotors.mmotors.JwtServiceTest - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 23:17:49 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-05-27 23:17:50 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 23:17:50 [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2026-05-27 23:17:50 [INFO] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-27 23:17:50 [INFO] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-27 23:17:51 [INFO] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 23:17:51 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-27 23:17:51 [INFO] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-27 23:17:51 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-27 23:17:51 [WARN] org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 23:17:51 [INFO] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 23:17:53 [INFO] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 23:17:53 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 23:17:53 [INFO] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-27 23:17:54 [WARN] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 23:17:54 [WARN] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1891396f-7bc9-484e-a068-c5afb3288ee3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-27 23:17:54 [INFO] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-27 23:17:55 [INFO] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-05-27 23:17:55 [INFO] com.mmotors.mmotors.JwtServiceTest - Started JwtServiceTest in 6.366 seconds (process running for 7.776)
+2026-05-27 23:17:55 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:55 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 23:17:55 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AdminControllerIntegrationTest]: AdminControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:55 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AdminControllerIntegrationTest
+2026-05-27 23:17:56 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:56 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 23:17:56 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.AuthControllerIntegrationTest]: AuthControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:56 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.AuthControllerIntegrationTest
+2026-05-27 23:17:56 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:56 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 23:17:56 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.DossierControllerIntegrationTest]: DossierControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:56 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.DossierControllerIntegrationTest
+2026-05-27 23:17:56 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:56 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 23:17:56 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.MmotorsApplicationTests]: MmotorsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:56 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.MmotorsApplicationTests
+2026-05-27 23:17:57 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:57 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 23:17:57 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.ProfilControllerIntegrationTest]: ProfilControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:57 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.ProfilControllerIntegrationTest
+2026-05-27 23:17:58 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:58 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 23:17:58 [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mmotors.mmotors.VehiculeControllerIntegrationTest]: VehiculeControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27 23:17:58 [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mmotors.mmotors.MmotorsApplication for test class com.mmotors.mmotors.VehiculeControllerIntegrationTest
+2026-05-27 23:17:58 [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 23:17:58 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-27 23:17:58 [INFO] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
