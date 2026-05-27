@@ -27,8 +27,8 @@ class VehiculeControllerIntegrationTest {
 
 
         Vehicule v = new Vehicule();
-        v.setMarque(marque);
-        v.setModele("Modele");
+         v.setMarque(marque);
+         v.setModele("Modele");
         v.setAnnee(2020);
         v.setPrix(prix);
         v.setKilometrage(50000);
@@ -38,6 +38,8 @@ class VehiculeControllerIntegrationTest {
 
     @Test
     void getAllVehicules_retourneTousLesVehicules() {
+
+
         creerVehicule("Toyota", "ACHAT", 10000);
 
         creerVehicule("Renault", "LOCATION", 500);

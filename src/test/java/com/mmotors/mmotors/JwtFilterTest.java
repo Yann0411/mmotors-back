@@ -19,7 +19,7 @@ import static org.mockito.Mockito.*;
 class JwtFilterTest {
 
     @Mock
-    private JwtServiceOld jwtService;
+    private JwtService jwtService;
 
     @Mock
     private ClientRepository clientRepository;
@@ -42,12 +42,14 @@ class JwtFilterTest {
 
         jwtFilter.doFilterInternal(request, response, filterChain);
 
-        verify(filterChain).doFilter(request, response);
+         verify(filterChain).doFilter(request, response);
         verify(jwtService, never()).tokenValide(any());
     }
 
     @Test
     void testTokenInvalide() throws Exception {
+
+
         when(request.getHeader("Authorization")).thenReturn("Bearer tokeninvalide");
         when(jwtService.tokenValide("tokeninvalide")).thenReturn(false);
 

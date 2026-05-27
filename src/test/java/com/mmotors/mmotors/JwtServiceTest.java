@@ -1,11 +1,16 @@
 package com.mmotors.mmotors;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class JwtServiceTest {
 
-    private final JwtServiceOld jwtService = new JwtServiceOld();
+    @Autowired
+        private JwtService jwtService;
 
     @Test
     void testgenererToken() {
@@ -28,7 +33,6 @@ class JwtServiceTest {
 
         assertTrue(jwtService.tokenValide(token));
 
-
     }
 
 
@@ -36,4 +40,5 @@ class JwtServiceTest {
     void tokenInvalide() {
         assertFalse(jwtService.tokenValide("token.invalide.bidon"));
     }
+
 }

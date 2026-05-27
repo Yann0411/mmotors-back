@@ -1,7 +1,9 @@
 package com.mmotors.mmotors;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
@@ -24,7 +26,13 @@ class DossierControllerTest {
     @InjectMocks
     private DossierController dossierController;
 
+    @AfterEach
+    void cleanup() {
+        SecurityContextHolder.clearContext();
+    }
+
     void connecterUtilisateur(String email) {
+
         UsernamePasswordAuthenticationToken auth =
                 new UsernamePasswordAuthenticationToken(email, null, List.of());
         SecurityContextHolder.getContext().setAuthentication(auth);
@@ -41,13 +49,14 @@ class DossierControllerTest {
         dossierController.deposerDossier(dossier);
 
         verify(dossierRepository).save(dossier);
-        assertEquals("EN_ATTENTE", dossier.getStatut());
+         assertEquals("EN_ATTENTE", dossier.getStatut());
 
-        assertEquals("test@mail.com", dossier.getClientEmail());
+         assertEquals("test@mail.com", dossier.getClientEmail());
     }
 
     @Test
     void testMesDossiers() {
+
         connecterUtilisateur("test@mail.com");
         when(dossierRepository.findByClientEmail("test@mail.com")).thenReturn(List.of());
 
