@@ -1,4 +1,4 @@
-# M-Motors — Back-end
+# M-Motors - Back-end
 
 API REST Spring Boot pour l'application M-Motors, spécialiste en vente et location de véhicules d'occasion.
 
