@@ -14,13 +14,15 @@ import java.util.Map;
 public class DossierController {
 
 
+    private final DossierRepository dossierRepository;
+    private final EmailService emailService;
 
-     private final DossierRepository dossierRepository;
 
-    public DossierController(DossierRepository dossierRepository) {
 
+    public DossierController(DossierRepository dossierRepository, EmailService emailService) {
 
         this.dossierRepository = dossierRepository;
+        this.emailService = emailService;
 
     }
 
@@ -50,8 +52,11 @@ public class DossierController {
             return ResponseEntity.status(400).body("Type d'offre invalide.");
         }
 
+
         dossierRepository.save(dossier);
+        emailService.envoyerConfirmationDossier(email, dossier.getTypeOffre());
         return ResponseEntity.ok("Dossier déposé avec succès");
+
 
     }
 

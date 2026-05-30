@@ -23,6 +23,10 @@ class DossierControllerTest {
     @Mock
      private DossierRepository dossierRepository;
 
+    @Mock
+    private EmailService emailService;
+
+
     @InjectMocks
     private DossierController dossierController;
 
