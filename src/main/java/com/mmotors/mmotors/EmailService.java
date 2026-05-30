@@ -2,6 +2,7 @@ package com.mmotors.mmotors;
 
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,7 +13,7 @@ public class EmailService {
     public EmailService(JavaMailSender mailSender) {
         this.mailSender = mailSender;
     }
-
+    @Async
     public void envoyerConfirmationDossier(String destinataire, String typeOffre) {
 
         try {
