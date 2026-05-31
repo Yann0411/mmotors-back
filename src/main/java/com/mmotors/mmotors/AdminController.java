@@ -143,7 +143,16 @@ public class AdminController {
             return ResponseEntity.notFound().build();
         }
         Dossier d = optDossier.get();
-        d.setCommentaireInterne(body.get("commentaireInterne"));
+        String existant = d.getCommentaireInterne();
+        String nouveau = body.get("commentaireInterne");
+        String date = java.time.LocalDateTime.now()
+                .format(java.time.format.DateTimeFormatter.ofPattern("dd/MM HH:mm"));
+        if (existant != null && !existant.isEmpty()) {
+            d.setCommentaireInterne(existant + "\n[" + date + "] " + nouveau);
+        } else {
+            d.setCommentaireInterne("[" + date + "] " + nouveau);
+        }
+
         dossierRepository.save(d);
         return ResponseEntity.ok("Commentaire ajouté.");
     }
