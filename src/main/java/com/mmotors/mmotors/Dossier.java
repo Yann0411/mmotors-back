@@ -16,6 +16,7 @@ public class Dossier {
     private String message;
     private String telephone;
     private String vehiculeInfo;
+    private String commentaireInterne;
 
 
 
@@ -34,6 +35,8 @@ public class Dossier {
     public void setTelephone(String telephone) { this.telephone = telephone; }
     public String getVehiculeInfo() { return vehiculeInfo; }
     public void setVehiculeInfo(String vehiculeInfo) { this.vehiculeInfo = vehiculeInfo; }
+    public String getCommentaireInterne() { return commentaireInterne; }
+    public void setCommentaireInterne(String commentaireInterne) { this.commentaireInterne = commentaireInterne; }
 
 
 

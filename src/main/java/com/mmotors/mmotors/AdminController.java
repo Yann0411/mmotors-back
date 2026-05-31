@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
@@ -132,6 +134,20 @@ public class AdminController {
         dossierRepository.deleteById(id);
         return ResponseEntity.ok("Dossier supprimé");
     }
+
+    @PatchMapping("/dossiers/{id}/commentaire")
+
+    public ResponseEntity<?> ajouterCommentaire(@PathVariable Long id, @RequestBody Map<String, String> body) {
+        Optional<Dossier> optDossier = dossierRepository.findById(id);
+        if (optDossier.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        Dossier d = optDossier.get();
+        d.setCommentaireInterne(body.get("commentaireInterne"));
+        dossierRepository.save(d);
+        return ResponseEntity.ok("Commentaire ajouté.");
+    }
+
 
 
 }
