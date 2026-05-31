@@ -54,7 +54,16 @@ public class DossierController {
 
 
         dossierRepository.save(dossier);
+
+        System.out.println("=>=>=> AVANT SAVE DOSSIER");
+
+        dossierRepository.save(dossier);
+
+        System.out.println("=>=>=> APRES SAVE DOSSIER - AVANT EMAIL");
+
         emailService.envoyerConfirmationDossier(email, dossier.getTypeOffre());
+
+        System.out.println("=>=>=> APRES APPEL EMAIL");
         return ResponseEntity.ok("Dossier déposé avec succès");
 
 
