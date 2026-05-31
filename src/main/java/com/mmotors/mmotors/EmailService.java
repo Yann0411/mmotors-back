@@ -16,6 +16,8 @@ public class EmailService {
     @Async
     public void envoyerConfirmationDossier(String destinataire, String typeOffre) {
 
+        System.out.println("=>=>=> ENTREE DANS EmailService");
+
         try {
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(destinataire);
